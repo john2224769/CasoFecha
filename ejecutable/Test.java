@@ -1,6 +1,7 @@
 package ejecutable;
 
 import modelo.Fecha;
+import modelo.FechaDetallada;
 
 public class Test
 {
@@ -21,6 +22,8 @@ public class Test
         int pos2= S.indexOf('U',0);
         Fecha f3 = new Fecha("12/05/20203");
 
+        FechaDetallada f4 = new FechaDetallada(20, 05, 2023);
+
 
         System.out.println("Dia: "+f1.getDia());
         System.out.println("Mes: "+f1.getMes());
@@ -40,6 +43,8 @@ public class Test
         System.out.println("Año: "+f3.getAnio());
         System.out.println(f3+"\n");
 
-        System.out.println(f1.equals(f2) ? "Las fechas son iguales" : "Las fechas son distintas");
+        System.out.println(f1.equals(f2) ? "Las fechas son iguales" : "Las fechas son distintas\n");
+
+        System.out.println(f4+"\n");
     }
 }
